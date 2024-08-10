@@ -72,3 +72,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 /CockRace/Library
 /CockRace/Temp
+/CockRace/Logs
+/CockRace/Logs
+/CockRace/UserSettings
+/CockRace/UserSettings
