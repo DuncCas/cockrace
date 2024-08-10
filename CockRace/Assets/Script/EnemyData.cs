@@ -10,6 +10,8 @@ public class EnemyData : MonoBehaviour , IDamagable
     public Sprite angerFace;
     public Sprite deadFace;
 
+
+    public int GivenHighscore;
     public UIEnemy ui;
     public GameObject visionCircle;
     public int MaxHP = 10;
@@ -55,7 +57,7 @@ public class EnemyData : MonoBehaviour , IDamagable
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.GetComponent<PlayerData>()){
-            GetDamage(player.HP);
+            GetDamage(player.HP, player);
             player.OnDamageRecieved(currentHp, Vector3.Normalize(collision.transform.position - transform.position));
         }
     }
@@ -89,7 +91,7 @@ public class EnemyData : MonoBehaviour , IDamagable
 
 
 
-    public void GetDamage(int value)
+    public void GetDamage(int value, PlayerData player)
     {
             currentHp -= value;
             if (currentHp <= 0)
@@ -97,6 +99,7 @@ public class EnemyData : MonoBehaviour , IDamagable
             currentHp = 0;
             isDead = true;
             visionCircle.SetActive(false);
+            player.highScore += GivenHighscore;
         }
 
     }

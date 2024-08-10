@@ -4,7 +4,7 @@ using UnityEngine;
 
 public interface IDamagable 
 {
-    void GetDamage(int value);
+    void GetDamage(int value, PlayerData player);
 
     void GiveHP(int value);
 }

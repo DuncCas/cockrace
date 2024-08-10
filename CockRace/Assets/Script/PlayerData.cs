@@ -15,7 +15,7 @@ public class PlayerData : MonoBehaviour, IDamagable
     [SerializeField] GameLogic gameLogic;
     public int hp = 5;
     [SerializeField] int currentHP;
-    [SerializeField] int highScore;
+    [SerializeField] public int highScore;
     [SerializeField] PlayerController controller;
     public int growthMultiplier = 2;
     public int startingGrowthCheck = 20;
@@ -90,11 +90,11 @@ public class PlayerData : MonoBehaviour, IDamagable
 
     public void OnDamageRecieved(int value, Vector3 dir)
     {
-        GetDamage(value);
+        GetDamage(value, this);
         controller.OnPushPlayer(dir);
     }
 
-    public void GetDamage(int value)
+    public void GetDamage(int value, PlayerData player)
     {
         if (currentHP == 1)
         {

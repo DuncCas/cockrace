@@ -295,7 +295,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0797ce8a8b9e3d840814f67f34894fbb, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -303,7 +303,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &5828435097248259135
@@ -384,9 +384,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d5b4b3015bc10346a6d0de2cd4592b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idleFace: {fileID: 21300000, guid: 62d165c092ec34b49a91096077a26901, type: 3}
-  angerFace: {fileID: 21300000, guid: f86836a91bcda3e4e8e6f2be0be908c2, type: 3}
-  deadFace: {fileID: 21300000, guid: 575ed791b668e0946b48bff44089c746, type: 3}
+  idleFace: {fileID: 21300000, guid: 0797ce8a8b9e3d840814f67f34894fbb, type: 3}
+  angerFace: {fileID: 21300000, guid: 5cab68a168898194999b1c8c3448b3cd, type: 3}
+  deadFace: {fileID: 21300000, guid: eeacd9e85ad66294483135345c89b5e1, type: 3}
   gameLogic: {fileID: 0}
   hp: 10
   currentHP: 0

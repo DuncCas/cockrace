@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 
 public class GameLogic : MonoBehaviour
 {
+    int MaxGameScore;
     static GameLogic instance;
     public GameObject player;
     public Transform playerSpawnPoint;
@@ -59,6 +60,7 @@ public class GameLogic : MonoBehaviour
         // farlo per tutti gli altri
 
         player.GetComponent<PlayerData>().GameManager = this;
+        player.GetComponent<PlayerData>().highScore = 0;
         player.transform.position = playerSpawnPoint.position;
         PlayerData pd = player.GetComponent<PlayerData>();
         pd.ui.toggleUI();

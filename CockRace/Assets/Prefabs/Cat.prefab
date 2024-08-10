@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyData: {fileID: 5588744886182182611}
   currentPositionToGo: {x: 0, y: 0, z: 0}
-  isMoving: 1
+  isMoving: 0
   waitTimer: 0
   maxWaitTimer: 3.4
   attackState: {fileID: 2192491566880158600}
@@ -69,7 +69,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3916585504841418548
 Transform:
   m_ObjectHideFlags: 0
@@ -200,7 +200,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &5588744886182182611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,6 +216,7 @@ MonoBehaviour:
   idleFace: {fileID: 0}
   angerFace: {fileID: 0}
   deadFace: {fileID: 0}
+  GivenHighscore: 400
   ui: {fileID: 5319658815600471586}
   visionCircle: {fileID: 4645764209822284249}
   MaxHP: 40
