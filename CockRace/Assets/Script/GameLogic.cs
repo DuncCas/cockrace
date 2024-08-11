@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class GameLogic : MonoBehaviour
 {
@@ -70,8 +71,13 @@ public class GameLogic : MonoBehaviour
 
     }
 
+    public static void RestartGame()
+    {
+        var currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
+    }
 
-
+    void doExitGame() { Application.Quit(); }
 
     public void SpawnEntity(GameObject entity, Vector3 previousPos)
     {
